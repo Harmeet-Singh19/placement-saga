@@ -18,7 +18,7 @@ export class Owl extends Component{
                 loop={true}
                 autoplay ={true}
                 slideBy={2}
-                autoplayTimeout={1800}
+                autoplayTimeout={1700}
                 autoplayHoverPause={false}
                 navigation={false}
                 autoHeightClass

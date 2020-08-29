@@ -83,8 +83,8 @@ function App() {
               <a className="App__nav-title-l" href="google.com">Mock Tests</a>
               <a className="App__nav-title-l" href="google.com">Subscribe</a>
             </span>
-            <div>
-              <button className="App__nav-login">Login</button>
+            <div >
+              <button className="App__nav-login">Login </button>
             </div>
           </span>
         </div>

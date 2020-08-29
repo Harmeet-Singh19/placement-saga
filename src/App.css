@@ -187,24 +187,36 @@ div{
     font-size: 17px;
     background-color: transparent;
     cursor: pointer;
-   
     transition: all .1s;
     overflow: hidden;
-}
-.App__nav-login::after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -200%;
-  width: 200%;
-  height: 100%;
-  -webkit-transform: skewX(-20deg);
-  transform: skewX(-20deg);
-  background-image: -webkit-linear-gradient(left,transparent,hsla(0,0%,100%,.3),transparent);
-  background-image: linear-gradient(90deg,transparent,hsla(0,0%,100%,.3),transparent);
+    
 }
 
+.App__nav-login:after{
+  
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 90%;
+    width: 10%;
+    height: 100%;
+   
+    transform: skewX(-20deg);
+        background-image: linear-gradient(
+          to right,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
+   
+  
+}
+.App__nav-login:hover:after{
+ 
+        z-index: 0;
+        transition: all 1.6s ease-in-out;
+}
 .App__nav-h-content{
   display: flex;
     justify-content: space-between;
@@ -859,6 +871,7 @@ div{
       width: 60%;
     }
   }
+ 
   @keyframes breathe {
     0% {
       transform: none;
